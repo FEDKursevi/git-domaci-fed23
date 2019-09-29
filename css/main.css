@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; }
+
+.container {
+  width: 60%;
+  max-width: 75em;
+  height: auto;
+  margin: 0 auto; }
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #797979;
+  margin: 30px; }
+
+#price-button {
+  display: none;
+  border: none;
+  border-radius: 25px / 17px;
+  width: 120px;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  border: 1px solid #797979; }
+  #price-button:hover {
+    background-color: #374249;
+    color: white; }
+
+header {
+  background-color: #374249;
+  width: 100%;
+  height: 3em; }
+  header .location {
+    background-color: #f75311;
+    float: left;
+    width: 20%;
+    height: 100%; }
+    header .location img {
+      width: 30px;
+      float: left;
+      height: 60%;
+      margin: 10px auto;
+      margin-left: 20px; }
+    header .location p {
+      color: white;
+      text-decoration: underline;
+      float: left;
+      margin: 15px auto;
+      height: 100%; }
+  header nav {
+    height: 100%;
+    width: 50%;
+    float: left;
+    text-align: left; }
+    header nav ul {
+      list-style: none;
+      height: 100%; }
+      header nav ul li {
+        display: inline-block;
+        height: 100%;
+        width: 10%;
+        padding: 15px; }
+        header nav ul li a {
+          text-decoration: none;
+          color: white; }
+          header nav ul li a:hover {
+            text-decoration: underline; }
+
+.sec1 {
+  width: 100%;
+  height: 35em;
+  background-image: url("../slike/intro.jpg");
+  background-position: center;
+  position: relative; }
+  .sec1 .naslov {
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    background-color: rgba(37, 42, 49, 0.6);
+    top: 70%;
+    left: 25%;
+    color: white; }
+    .sec1 .naslov h1 {
+      font-size: 40px;
+      font-weight: normal; }
+
+.sec2 {
+  width: 100%;
+  margin-left: 40%;
+  padding: 5px; }
+  .sec2 button {
+    border: none;
+    border-radius: 25px / 17px;
+    width: 120px;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border: 1px solid #797979; }
+    .sec2 button:hover {
+      background-color: #374249;
+      color: white; }
+
+.sec3 {
+  width: 100%;
+  background-color: #f3f7f9; }
+  .sec3 .img-container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; }
+    .sec3 .img-container .okvir {
+      position: relative; }
+      .sec3 .img-container .okvir p {
+        position: absolute;
+        width: 100%;
+        background-color: rgba(214, 214, 214, 0.6);
+        padding: 10px;
+        font-size: 18px;
+        top: 5px;
+        left: 5px;
+        display: none; }
+      .sec3 .img-container .okvir img {
+        width: 200px;
+        max-height: 250px;
+        padding: 5px;
+        position: relative; }
+      .sec3 .img-container .okvir:hover p {
+        display: inline-block; }
+
+.sec4 {
+  text-align: center;
+  color: #797979; }
+  .sec4 table {
+    width: 50%;
+    margin: 30px auto;
+    border-spacing: 0px; }
+    .sec4 table th, .sec4 table td {
+      border: 1px solid #797979;
+      padding: 5px;
+      font-size: 14px; }
+    .sec4 table th {
+      color: white; }
+    .sec4 table .invisible {
+      border: none; }
+    .sec4 table .orange {
+      background-color: #f75311; }
+    .sec4 table .gray {
+      background-color: #374249; }
+
+.sec5 {
+  width: 100%;
+  background-color: #f3f7f9;
+  display: inline-block;
+  text-align: center; }
+  .sec5 .gmap {
+    margin: 40px;
+    margin-left: 80px;
+    width: 30%;
+    float: left; }
+    .sec5 .gmap iframe {
+      width: 80%; }
+  .sec5 form {
+    display: inline-block;
+    margin-top: 40px;
+    width: 40%; }
+    .sec5 form select {
+      float: left;
+      background-color: white;
+      border: none;
+      border: 10px solid #f75311;
+      width: 20%;
+      height: 40px; }
+    .sec5 form input {
+      border: 10px solid #f75311;
+      height: 40px; }
+    .sec5 form input[type="text"] {
+      float: right;
+      width: 80%; }
+    .sec5 form input[type="email"] {
+      float: left;
+      width: 100%; }
+    .sec5 form textarea {
+      float: left;
+      border: none;
+      width: 100%;
+      border: 10px solid #f75311;
+      height: 60px; }
+
+footer {
+  background-color: #374249;
+  text-align: center;
+  padding: 10px; }
+  footer p {
+    color: white;
+    display: inline; }
+  footer .text-orange {
+    color: #f75311; }
+
+@media (max-width: 1250px) {
+  * {
+    font-size: 12px; }
+
+  header .location {
+    width: 25%; }
+    header .location img {
+      margin: 6px auto;
+      margin-left: 20px; }
+    header .location p {
+      margin: 10px auto; }
+  header nav ul li {
+    padding: 10px;
+    margin-left: 15px; }
+
+  .sec1 .naslov {
+    top: 50%; }
+    .sec1 .naslov h1 {
+      font-size: 35px; }
+
+  .sec2 {
+    margin-left: 30%; }
+    .sec2 button {
+      width: 80px;
+      padding: 5px;
+      margin: 8px;
+      font-size: 9px; }
+
+  .sec3 .img-container {
+    width: 80%; }
+    .sec3 .img-container .okvir {
+      margin: 0 auto; }
+      .sec3 .img-container .okvir p {
+        width: 96%;
+        font-size: 16px; }
+
+  .sec5 {
+    display: flexbox; }
+    .sec5 .gmap {
+      margin: 0 auto;
+      width: 100%; }
+      .sec5 .gmap iframe {
+        width: 40%; }
+    .sec5 form {
+      margin: 20px auto;
+      width: 70%;
+      float: unset; } }
+@media (max-width: 700px) {
+  * {
+    font-size: 10px; }
+
+  h2 {
+    margin: 20px; }
+
+  #price-button {
+    display: inline-block; }
+
+  header {
+    height: 18em; }
+    header .location {
+      float: unset;
+      width: 100%;
+      height: 20%; }
+      header .location img {
+        width: 20px;
+        height: 60%;
+        margin-top: 6px; }
+      header .location p {
+        display: inline-block; }
+    header nav {
+      width: 100%;
+      float: unset;
+      text-align: center; }
+      header nav ul li {
+        display: block;
+        height: 0;
+        width: 100%;
+        margin: 10px auto; }
+
+  .sec1 {
+    height: 11em;
+    background-image: none; }
+    .sec1 .naslov {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      background-color: black;
+      top: 0;
+      left: 0; }
+      .sec1 .naslov h1 {
+        font-size: 30px; }
+
+  .sec2 {
+    margin: 10px 0;
+    padding: 0;
+    text-align: center; }
+    .sec2 button {
+      border-radius: 25px / 17px;
+      width: 70px;
+      margin: 5px; }
+
+  .sec3 .img-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px; }
+    .sec3 .img-container .okvir {
+      width: 100%; }
+      .sec3 .img-container .okvir p {
+        font-size: 14px; }
+      .sec3 .img-container .okvir img {
+        width: 100%;
+        height: 150px;
+        padding: 5px;
+        object-fit: cover; }
+
+  .sec4 {
+    text-align: center;
+    color: #797979; }
+    .sec4 table {
+      display: none; }
+
+  .sec5 .gmap iframe {
+    width: 80%; }
+  .sec5 form {
+    margin: 20px auto;
+    width: 90%;
+    float: unset; } }
+
+/*# sourceMappingURL=main.css.map */

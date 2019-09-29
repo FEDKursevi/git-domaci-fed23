@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HomeExchenge</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="location">
+                <img src="slike/location.png" alt="img">
+                <p>New York</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Rent</a></li>
+                    <li><a href="#">Buy</a></li>
+                    <li><a href="#">Sell</a></li>
+                    <li><a href="#">Messages</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="sec1">
+                <div class="naslov">
+                    <h1>Welcome to HomeExchenge</h1>
+                    <p>Your fastest way to find or sell home online.</p>
+                </div>
+            </section>
+            <section class="sec2">
+                <button type="button">$1,200-$4000</button>
+                <button type="button">1+Bedroom</button>
+                <button type="button">Garage</button>
+            </section>
+            <section class="sec3">
+                <div class="img-container">
+                    <div class="okvir">
+                        <img src="slike/1.jpg" alt="img">
+                        <p>Loft Apartman <br> $4,000</p>
+                    </div>
+                    <div class="okvir">
+                        <img src="slike/2.jpg" alt="img">
+                        <p>Villa<br> $25,000</p>
+                    </div>
+                    <div class="okvir">
+                        <img src="slike/3.jpg" alt="img">
+                        <p>Room<br> $10,000</p>
+                    </div>
+                    <div class="okvir">
+                        <img src="slike/4.jpg" alt="img">
+                        <p>Modern Office <br> $3,500</p>
+                    </div>
+                    <div class="okvir">
+                        <img src="slike/5.jpg" alt="img">
+                        <p>Spacious Apartman <br> $3,000</p>
+                    </div>
+                    <div class="okvir">
+                        <img src="slike/6.jpg" alt="img">
+                        <p>Coffe Shop<br> $8,000</p>
+                    </div>
+                </div>
+            </section>
+            <section class="sec4">
+                <h2>Pricing</h2>
+                <p>Our services prices in New York</p>
+                <button type="button"  id="price-button">Check the prices</button>
+                <table>
+                    <tr>
+                        <td class="invisible" colspan="4" rowspan="2"></td>
+                        <th class="orange" colspan="3">Price</th>
+                    </tr>
+                    <tr>
+                        <th class="gray" colspan="2">Rent/Buy</th>
+                        <th class="gray">Sell</th>
+                    </tr>
+                    <tr>
+                        <th class="orange" rowspan="3" colspan="2">Location</th>
+                        <th class="gray" colspan="2">Downtown</th>
+                        <td colspan="2">3$</td>
+                        <td>3$</td>
+                    </tr>
+                    <tr>
+                        <th class="gray" colspan="2">Center</th>
+                        <td colspan="2">3$</td>
+                        <td>3$</td>
+                    </tr>
+                    <tr>
+                        <th class="gray" colspan="2">Manhattan</th>
+                        <td colspan="2">3$</td>
+                        <td>3$</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="sec5">
+                    <h2>Contact US</h2>
+                <div class="gmap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14797.404128376176!2d-73.97276606620612!3d40.757330264334286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2z0KLQsNGY0LzRgSDRgdC60LLQtdGA!5e0!3m2!1ssr!2srs!4v1569674655638!5m2!1ssr!2srs" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+                <form action="#" method="post" class="contactUS">
+                    <select name="gender" id="gender">
+                        <option value="Ms">Ms</option>
+                        <option value="Mrs">Mrs</option>
+                        <option value="Mr">Mr</option>
+                        <option value="Mx">Mx</option>
+                    </select>
+                    <input type="text" name="name" id="name" placeholder="Your name" maxlength="25">
+                    <input type="email" name="email" id="email" placeholder="Your email" maxlength="30">
+                    <textarea name="contact-message" id="contact-mesage" placeholder="Your message" maxlength="350"></textarea>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Copyright @ 2016</p>
+            <p class="text-orange">HomeExchenge</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+
+@mixin middle{
+    @media (max-width:1250px) {
+    @content;
+    }
+}
+
+@mixin small {
+    @media (max-width: 700px){
+        @content;
+    }
+}
+
+@mixin button-desing {
+    border: none;
+    border-radius: 25px / 17px;
+    width: 120px;
+    padding: 10px;
+    margin: 10px;
+    background-color: $fontColorWhite;
+    border: 1px solid $fontColorGray;
+    @content;
+
+    &:hover{
+        background-color:$header-footerBkg;
+        color: $fontColorWhite; 
+    }
+}
