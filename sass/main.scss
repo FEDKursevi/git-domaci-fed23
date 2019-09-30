@@ -1,0 +1,12 @@
+@import "vars";
+@import "mixins";
+
+//tabs, 4spc/tab
+
+* {
+  @include zero-all();
+
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+}

@@ -1,0 +1,12 @@
+@mixin zero-all {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin debug {
+  @if $debug == "true" {
+    border: 1px solid red;
+    // background-color: yellow;
+  }
+}
