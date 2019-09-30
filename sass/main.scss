@@ -43,12 +43,6 @@
     }
   }
 
-// section {
-//     float: left;
-//     width: 100%;
-//     padding: 7.5em 20%;
-// }
-
 .billboard {
 
 	position: relative;
@@ -78,14 +72,23 @@
 		font-size: 1.5em;
 		width: 100%;
 	}
-
-	
-
-	
-
-	
 }
 
-.billboard-text {
-	background-color:$colorBckHeaderFooter;
+.pricing {
+	// @include debug();
+	width: 100%;
+	margin-left: 50%;
+
+	h3 {
+		width: 15%;
+		display: inline-block;
+		border: 1px solid $colorFontMain;
+		border-radius: 20px;
+		text-align: center;
+		font-size: 1em;
+		padding: 10px 0 10px 0;
+		color: $colorFontMain;
+	}
 }
+
+
