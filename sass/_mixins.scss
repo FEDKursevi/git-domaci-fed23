@@ -1,7 +1,10 @@
 @mixin zero-all {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+
+  -webkit-box-sizing: border-box;
+  	 -moz-box-sizing: border-box;
+  		  box-sizing: border-box;
 }
 
 @mixin debug {
@@ -9,4 +12,19 @@
     border: 1px solid red;
     // background-color: yellow;
   }
+}
+
+@mixin main {
+  * {
+    @include zero-all();
+    font-family: $font;
+  }
+}
+
+@mixin scale($factor) {
+  -webkit-transform: scale($factor);
+  -moz-transform: scale($factor);
+  -ms-transform: scale($factor);
+  -o-transform: scale($factor);
+  transform: scale($factor);
 }
