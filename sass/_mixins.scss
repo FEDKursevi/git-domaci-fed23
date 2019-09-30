@@ -18,6 +18,7 @@
 	* {
 		@include zero-all();
 		font-family: $font;
+		color: $colorWhite;
 	}
 }
 

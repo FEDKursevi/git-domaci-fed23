@@ -10,12 +10,10 @@
   height: 3em;
   float: left;
   background-color: $colorBckHeaderFooter;
-  // padding: 0.5em 15%;
 
   .avatar {
     float: left;
     height: 100%;
-    //   border-radius: 50%;
     overflow: hidden;
 
     img {
@@ -23,72 +21,98 @@
     }
   }
 }
-  ul {
-    list-style: none;
-    float: left;
-    margin-top: 1em;
+ul {
+  list-style: none;
+  float: left;
+  margin-top: 1em;
 
-    li {
-      display: inline-block;
-      margin-right: 1em;
+  li {
+    display: inline-block;
+    margin-right: 1em;
 
-      a {
-        text-decoration: none;
-        color: $colorWhite;
+    a {
+      text-decoration: none;
+      color: $colorWhite;
 
-        &:hover {
-          color: $colorFontMain;
-        }
+      &:hover {
+        color: $colorFontMain;
       }
     }
   }
+}
 
 .billboard {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 0;
+  margin: 0;
 
-	position: relative;
-	text-align: center;
-	color: white;
-	padding: 0;
-	margin: 0;
+  img {
+    width: 100%;
+  }
 
-	img {
-		width: 100%;
-	}
+  h1 {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 100%;
+    padding: 3px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    font-size: 3em;
 
-	h1 {
-		position: absolute;
-		top: 60%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		font-size: 3em;
-		width: 100%;
-	}
-
-	h4 {
-		position: absolute;
-		top: 70%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		font-size: 1.5em;
-		width: 100%;
-	}
+    &:last-child {
+      font-size: 1.5em;
+      top: 69%;
+      padding: 2px;
+    }
+  }
 }
 
 .pricing {
-	// @include debug();
-	width: 100%;
-	margin-left: 50%;
+  // @include debug();
+  width: 100%;
+  margin-left: 50%;
 
-	h3 {
-		width: 15%;
-		display: inline-block;
-		border: 1px solid $colorFontMain;
-		border-radius: 20px;
-		text-align: center;
-		font-size: 1em;
-		padding: 10px 0 10px 0;
-		color: $colorFontMain;
-	}
+  h3 {
+    width: 15%;
+    display: inline-block;
+    border: 1px solid $colorFontMain;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px 0 10px 0;
+    color: $colorFontMain;
+  }
 }
 
+.bullshit-apartment-images {
+  background-color: $colorAppImages;
+  margin-top: 10px;
+  
 
+  &>div {
+	width: 80%;
+	margin-left: 50%;
+	transform: translate(-50%, 0);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	overflow: hidden;
+	
+	
+	
+
+	&>div {
+		width: 20%;
+		margin: 10px;
+		// @include debug();
+		
+		img {
+			width: 100%;
+			// @include debug();
+		}
+	}
+  }
+}
