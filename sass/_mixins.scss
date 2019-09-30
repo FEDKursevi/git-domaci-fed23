@@ -1,10 +1,10 @@
 @mixin zero-all {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 
-  -webkit-box-sizing: border-box;
-  	 -moz-box-sizing: border-box;
-  		  box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 @mixin debug {
@@ -15,16 +15,16 @@
 }
 
 @mixin main {
-  * {
-    @include zero-all();
-    font-family: $font;
-  }
+	* {
+		@include zero-all();
+		font-family: $font;
+	}
 }
 
 @mixin scale($factor) {
-  -webkit-transform: scale($factor);
-  -moz-transform: scale($factor);
-  -ms-transform: scale($factor);
-  -o-transform: scale($factor);
-  transform: scale($factor);
+	-webkit-transform: scale($factor);
+	-moz-transform: scale($factor);
+	-ms-transform: scale($factor);
+	-o-transform: scale($factor);
+	transform: scale($factor);
 }
